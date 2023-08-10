@@ -55,10 +55,6 @@ public class BankApp extends Application {
         System.out.println(System.getProperty("user.dir"));
 
 
-        //String id = AccountManager.generateRandomString(8);
-        //AccountManager.newAccount(id,"loic", "daniel12", 400, "c");
-//        AccountManager.addUserEmail(key, email);
-
         Map<String, AccountManager> existingAccountMap = new HashMap<>();
         // Peupler existingAccountMap avec des données existantes si nécessaire
 
@@ -70,10 +66,6 @@ public class BankApp extends Application {
             AccountManager value = entry.getValue();
             System.out.println("Key: " + key + ", Value: " + value + " Owner: " + value.owner + "Email : " + value.email);
         }
-
-        //AccountManager.clearallAccounts("Account.dat");
-
-        //Map<String, AccountManager> loadedUsersMap = readHashMapFromFile("Users.dat", existingAccountMap);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Entrez un email");
