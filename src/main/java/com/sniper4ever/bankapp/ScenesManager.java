@@ -1,4 +1,4 @@
-package com.sniper4ever.bankapp.Managers;
+package com.sniper4ever.bankapp;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -1,7 +1,5 @@
-package com.sniper4ever.bankapp.Controllers;
+package com.sniper4ever.bankapp;
 
-import com.sniper4ever.bankapp.AccountManager;
-import com.sniper4ever.bankapp.Managers.ScenesManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;

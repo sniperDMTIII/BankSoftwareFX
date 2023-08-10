@@ -1,7 +1,5 @@
-package com.sniper4ever.bankapp.Controllers;
+package com.sniper4ever.bankapp;
 
-import com.sniper4ever.bankapp.AccountManager;
-import com.sniper4ever.bankapp.Managers.ScenesManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -32,7 +30,7 @@ public class homeController {
         textvalue.setText(value + " USD");
         textid.setText(id);
         textuser.setText(user);
-        texttype.setText("Compte " + choix);
+        texttype.setText("C: " + choix);
 
 
     }

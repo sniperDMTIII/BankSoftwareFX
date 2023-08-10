@@ -1,20 +1,21 @@
 package com.sniper4ever.bankapp;
 
 import java.io.*;
+import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
 
 public class AccountManager implements Serializable {
-    public String owner;
+    String owner;
     String pass;
 
     String type;
 
     String id;
 
-    public String email;
+    String email;
     double value;
 
     private static long serialVersionUID = 123456789L;
