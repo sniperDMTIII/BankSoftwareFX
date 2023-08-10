@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sniper4ever.bankapp.Controllers.loginController">
+   <children>
+      <ImageView accessibleRole="PARENT" fitHeight="108.0" fitWidth="251.0" layoutX="175.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="174.0">
+         <image>
+            <Image url="@../../../logo_bank.png" />
+         </image>
+         <viewport>
+            <Rectangle2D minX="10.0" minY="10.0" width="100.0" />
+         </viewport>
+      </ImageView>
+      <Label accessibleRole="PARENT" layoutX="246.0" layoutY="171.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="109.0" text="Se connecter" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="245.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="page1" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="179.0" layoutY="220.0" text="Email:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailfield" layoutX="179.0" layoutY="246.0" prefHeight="26.0" prefWidth="235.0" promptText="Veuillez entrez votre email" />
+            <Button layoutX="364.0" layoutY="291.0" mnemonicParsing="false" onAction="#switchlogin2" style="-fx-background-color: #337ae4;" text="Suivant" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="179.0" layoutY="292.0" onAction="#createAccount" prefHeight="22.0" prefWidth="100.0" text="Créer un compte" textFill="#337ae4">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="page2" layoutY="-2.0" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="180.0" layoutY="221.0" prefHeight="19.0" prefWidth="118.0" text="Mot de passe:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="317.0" layoutY="294.0" mnemonicParsing="false" onAction="#Mainmenu" style="-fx-background-color: #337ae4;" text="Se connecter" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="180.0" layoutY="295.0" onAction="#backpage1" prefHeight="22.0" prefWidth="100.0" text="Retour" textFill="#337ae4">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Hyperlink>
+            <PasswordField fx:id="pass" layoutX="180.0" layoutY="248.0" prefHeight="25.0" prefWidth="214.0" promptText="Veuillez saisir votre mot de passe" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="errorpane" layoutX="-7.0" layoutY="300.0" prefHeight="98.0" prefWidth="614.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffcfcf" height="39.0" layoutX="190.0" layoutY="30.0" stroke="#ff7d7d" strokeType="INSIDE" width="227.0" />
+            <Label fx:id="errormessage" alignment="CENTER" contentDisplay="CENTER" layoutX="207.0" layoutY="41.0" prefHeight="17.0" prefWidth="196.0" text="-errormsg" textAlignment="CENTER" textFill="#d72121" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
