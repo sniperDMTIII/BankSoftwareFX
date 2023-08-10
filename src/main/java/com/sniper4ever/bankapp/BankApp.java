@@ -60,7 +60,6 @@ public class BankApp extends Application {
 
         Map<String, AccountManager> loadedAccountMap = readHashMapFromFile("Account.dat", existingAccountMap);
 
-        // Afficher ou manipuler le contenu de la HashMap dans la console
         for (Map.Entry<String, AccountManager> entry : loadedAccountMap.entrySet()) {
             String key = entry.getKey();
             AccountManager value = entry.getValue();
